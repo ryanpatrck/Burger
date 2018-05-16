@@ -4,8 +4,7 @@ const express = require('express')
       exphbs = require('express-handlebars')
 
       app = express ()
-app.use(express.static(_dirname + '/public'))
-
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({
     extended: false
 }))
@@ -14,3 +13,7 @@ app.use(methodOverride('_method'))
 app.engine("handlebars", exphbs({
     defaultLayout: 'main'
 }))
+app.set('view engine', 'handlebars')
+
+    PORT = process.env.PORT || 8080;
+    app.listen(PORT)
