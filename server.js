@@ -15,5 +15,8 @@ app.engine("handlebars", exphbs({
 }))
 app.set('view engine', 'handlebars')
 
+    routes = require('./controllers/burgers_controller.js')
+app.use('/', routes)
+
     PORT = process.env.PORT || 8080;
     app.listen(PORT)
