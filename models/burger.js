@@ -9,6 +9,10 @@ const orm = require('../config/orm.js')
 
           update: (id, cb) => {
               orm.update('burgers',id,cb);
+          },
+
+          create: (name,cb) => {
+              orm.create('burgers', name, cb)
           }
       }
 

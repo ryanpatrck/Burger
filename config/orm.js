@@ -14,8 +14,11 @@ const connection = require('./connection.js')
                 cb(result)
             })
           }, 
-          create: (table,val,cb) => {
-              
+          create: (tableInput,val,cb) => {
+              connection.query('INSERT INTO '+tableInput+" (burger_name) VALUES ('"+val+"');", (err, result) => {
+                if(err) throw err
+                cb(result);
+              })
           }
       }
 module.exports = orm;

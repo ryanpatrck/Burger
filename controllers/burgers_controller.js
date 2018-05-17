@@ -17,5 +17,10 @@ const express = require('express')
         })
     })
 
+    router.post('/burger/create', (req,res) =>{
+        burger.create(req.create(req.body.burger_name, (result) => {
+            res.redirect('/');
+        }))
+    })
 
     module.exports = router;
