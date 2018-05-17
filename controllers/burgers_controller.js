@@ -10,7 +10,7 @@ const express = require('express')
        
     })
 
-    router.put('/burgers/update ', (req,res) => {
+    router.put('/burger/update', (req,res) => {
         burger.update(req.body.burger_id, (result) => {
             console.log(result)
             res.redirect('/')
