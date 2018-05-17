@@ -13,6 +13,9 @@ const connection = require('./connection.js')
                 if(err) throw err;
                 cb(result)
             })
+          }, 
+          create: (table,val,cb) => {
+              
           }
       }
 module.exports = orm;
