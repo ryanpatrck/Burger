@@ -5,7 +5,7 @@ const express = require('express')
     router.get('/', (req, res) => {
         burger.all(((burger_data)=> {
             console.log(burger_data)
-            res.render('index');
+            res.render('index', {burger_data});
         }))
        
     })
