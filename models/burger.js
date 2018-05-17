@@ -5,6 +5,10 @@ const orm = require('../config/orm.js')
               orm.all("burgers", (res) => {
                   cb(res);
               })
+          }, 
+
+          update: (id, cb) => {
+              orm.update('burgers',id,cb);
           }
       }
 
