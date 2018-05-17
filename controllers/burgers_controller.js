@@ -1,8 +1,13 @@
 const express = require('express')
       router = express.Router()
+      burger =   require('../models/burger.js')
 
     router.get('/', (req, res) => {
-        res.render('index')
+        burger.all(((burger_data)=> {
+            console.log(burger_data)
+            res.render('index');
+        }))
+       
     })
 
     module.exports = router;
