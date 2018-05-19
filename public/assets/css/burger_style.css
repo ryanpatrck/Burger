@@ -1,0 +1,69 @@
+html {
+    background-color: #87ceeb
+};
+
+body {
+    width: 75%;
+   margin: 0 auto; 
+   background-color: white;
+};
+
+#displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    margin: 50px;
+}
+
+.burgerAvailable {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 25px;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+}
+
+.burgerEaten {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    background-color: gold;
+}
+
+.addBurgerButton {
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+    border-radius: 25px;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    background-color: #FFC04C;
+    border: none;
+}
+
+h2 {
+text-align: center;
+
+   font-size: 40px;
+   margin: 50px;
+}
+
+
+.addBurgerButton:active {
+   background-color: #FFC04C;
+}

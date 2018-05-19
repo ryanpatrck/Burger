@@ -8,7 +8,7 @@ const mysql = require('mysql')
 
 connection.connect((err) =>{
     if (err) throw err
-    console.log("connected as id: "+connection.threadid)
+    console.log("connected as id: "+connection.threadId)
 })
 
 module.exports = connection;
