@@ -2,6 +2,7 @@ const express = require('express')
       bodyParser = require('body-parser')
       methodOverride = require('method-override')
       exphbs = require('express-handlebars')
+      PORT = process.env.PORT || 8080;
 
       app = express ()
 app.use(express.static(__dirname + '/public'))
@@ -18,7 +19,6 @@ app.set('view engine', 'handlebars')
 routes = require('./controllers/burgers_controller.js')
 app.use('/', routes)
 
-    PORT = process.env.PORT || 8080;
-    app.listen(PORT, () => {
+app.listen(PORT, () => {
         console.log("App listening on PORT: " + PORT);
     })
